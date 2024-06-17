@@ -1,0 +1,6 @@
+[submodule "env/third_party/orocos_kinematics_dynamics"]
+	path = env/third_party/orocos_kinematics_dynamics
+	url = git@github.com:orocos/orocos_kinematics_dynamics.git
+[submodule "third_party/Pointnet2_PyTorch"]
+	path = third_party/Pointnet2_PyTorch
+	url = git@github.com:erikwijmans/Pointnet2_PyTorch.git
