@@ -107,9 +107,6 @@ stack-data==0.6.3
 tenacity==8.2.3
 threadpoolctl==3.3.0
 tomli==2.0.1
-torch==1.13.1+cu116
-torchaudio==0.13.1+cu116
-torchvision==0.14.1+cu116
 tqdm==4.66.1
 traitlets==5.14.1
 traits==6.4.3
