@@ -10,7 +10,7 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 
 [ [website](https://genh2r.github.io/) ] [ [arXiv](https://arxiv.org/abs/2401.00929) ] [ [video](https://www.youtube.com/watch?v=BbphK5QlS1Y) ] 
 
-![logo](1_logo.gif)
+![logo](assets/1_logo.gif)
 
 ## Introduction
 
