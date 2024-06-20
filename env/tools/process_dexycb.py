@@ -76,10 +76,12 @@ def process_object(object_name: str):
     object_dir = os.path.join(data_dir, "assets", "objects", "ycb", object_name)
     # grasps
     object_grasp_path_original = os.path.join(ycb_grasps_dir, object_name+".npy")
-    if not os.path.exists(object_grasp_path_original):
+    object_grasp_path = os.path.join(object_dir, "grasps.npy")
+    if os.path.exists(object_grasp_path):
+        pass
+    elif not os.path.exists(object_grasp_path_original):
         print(f"grasps not found for {object_name}")
     else:
-        object_grasp_path = os.path.join(object_dir, "grasps.npy")
         simulator_grasp = np.load(
             object_grasp_path_original,
             allow_pickle=True,
@@ -93,7 +95,9 @@ def process_object(object_name: str):
         pose_grasp = ycb_special_case(pose_grasp, object_name)
         np.save(object_grasp_path, pose_grasp)
     # sdf
-    gen_sdf(os.path.join(object_dir, "model_normalized_convex.obj"))
+    object_sdf_path = os.path.join(object_dir, "sdf.npz")
+    if not os.path.exists(object_sdf_path):
+        gen_sdf(os.path.join(object_dir, "model_normalized_convex.obj"))
 
 dexycb_data_dir = os.path.join(data_dir, "tmp", "dex-ycb-cache")
 def process(scene_id: int):
