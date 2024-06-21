@@ -73,7 +73,7 @@ pip install pointnet2_ops_lib/.
 cd ../..
 ```
 ### Prepare Data
-#### DexYCB (TODO: add download command)
+#### DexYCB
 Download [`dex-ycb-cache-20220323.tar.gz`](https://drive.google.com/uc?export=download&id=1Jqe2iqI7inoEdE3BL4vEs25eT5M7aUHd) (from [handover-sim](https://github.com/NVlabs/handover-sim)) to `env/data/tmp`.
 
 Download [`assets.tar.gz`](https://drive.google.com/file/d/1jLi23goHESWHMIud2wpNiQNdZ45dMQ49/view?usp=drive_link) (the object and hand models are from [handover-sim](https://github.com/NVlabs/handover-sim)) to `env/data`.
